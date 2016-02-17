@@ -179,7 +179,6 @@ add_action( 'wp_enqueue_scripts', 'byadr_set_styles_js' );
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
  * 6.- Infinite Prev/Next post looping
- * X.- Shortcodes ***
  *
  */
 

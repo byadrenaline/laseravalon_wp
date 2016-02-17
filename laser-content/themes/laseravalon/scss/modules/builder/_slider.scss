@@ -21,7 +21,7 @@
 			@include centrado_v;
 			left: 5rem;
 
-			width: 96rem;
+			//width: 96rem;
 			max-width: 40%;
 			padding: 1rem;
 
@@ -85,6 +85,7 @@
 			.slider--claim{
 				@include centrado_h;
 				top: 5rem;
+				width: 96rem;
 				max-width: 70%;
 
 				font-size: 1.8rem;

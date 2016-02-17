@@ -58,21 +58,23 @@ blockquote{
 
 	color: $color__brand;
 	font-size: 2rem;
-	font-family: $font__font-family-secondary;
+	font-family: $font__font-family-terciary;
+	font-weight: bold;
 	text-align: center;
 
-
+/*
 	p{
 		
 		&::before,
 		&::after {
-			content: "\f10d";
-			font-family: 'FontAwesome';
 			display: inline;
+			margin: 0 0.5rem;
+			//font-family: 'FontAwesome';
+			content: '"';
 		}
-		
-	} 
 
+	} 
+*/
 }
 
 
@@ -136,6 +138,10 @@ big {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 768px) {
+	blockquote{
+		margin: 5rem 0rem;
+		text-align: left;
+	}
 
 }
 

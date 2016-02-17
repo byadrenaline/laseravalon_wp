@@ -4,10 +4,15 @@
 
 .quote-module{
 	padding: 10rem 0;
-	background-color: $color__brand-light;
-	color: #ffffff;
+	background-color: $color__brand-secondary-dark;
+
 
 	.quote-autor{font-size: 90%;}
+
+	blockquote{
+		color: #ffffff;
+		font-size: 2.4rem;
+	}
 
 }
 
@@ -18,6 +23,7 @@
 
 
 @media only screen and (max-width: 768px) {
+
 }
 
 @media only screen and (max-width: 412px) {

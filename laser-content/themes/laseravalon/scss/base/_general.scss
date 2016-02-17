@@ -23,10 +23,13 @@ body{
 }
 
 hr {
-	background-color: $color__gray;
+
+	background-color: transparent;
 	border: 0;
-	height: 1px;
-	margin-bottom: 1rem;
+	border-bottom: 5px dotted $color__gray-light;
+	max-width: 30rem; 
+	height: 5px;
+	margin: 3rem auto;
 }
 
 

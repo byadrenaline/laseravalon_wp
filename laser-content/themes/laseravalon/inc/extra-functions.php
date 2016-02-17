@@ -9,7 +9,6 @@
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
  * 6.- Infinite Prev/Next post looping
- * X.- Shortcodes
  *
  */
 
