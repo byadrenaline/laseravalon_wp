@@ -1,0 +1,146 @@
+
+/* Tipografia
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{ 
+	clear: both;
+	font-family: $font__font-family-secondary;
+	line-height: 120%;
+	color: $color__gray-dark;
+	margin: 1rem 0;
+}
+
+h1 { 
+	font-family: $font__font-family-terciary;
+	font-size: 1.8rem;
+	color: $color__gray-light;
+}
+
+h2 { 
+	font-size: 2.4rem;
+	font-weight: normal;
+
+}
+
+h3 { 
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+h4 { 
+	color: $color__gray-light;
+	font-weight: normal;
+}
+
+
+h5 { 
+
+}
+
+p{
+	margin-bottom: 3rem; 
+}
+
+strong{
+	font-weight: bold;
+}
+
+
+/* Blockquote // Citas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote{
+	margin: 5rem -10rem;
+
+	color: $color__brand;
+	font-size: 2rem;
+	font-family: $font__font-family-secondary;
+	text-align: center;
+
+
+	p{
+		
+		&::before,
+		&::after {
+			content: "\f10d";
+			font-family: 'FontAwesome';
+			display: inline;
+		}
+		
+	} 
+
+}
+
+
+/* Superíndice / Subíndice
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+sup, 
+sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: .8em;
+}
+sub { top: 0.4em; }
+
+/* Otros
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+dfn, 
+cite, 
+em, 
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, 
+kbd, 
+tt, 
+var {
+
+}
+
+abbr, 
+acronym {
+	cursor: help;
+}
+
+mark, 
+ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 412px) {
+
+}
+
