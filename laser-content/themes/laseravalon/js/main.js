@@ -17,6 +17,76 @@ documento.on('ready',function(){
 	
 
 
+/* Grilla Imagenes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+documento.on('ready', byadr_add_grilla_class);
+ventana.on('resize', byadr_add_grilla_class);
+
+function byadr_add_grilla_class() {
+    if (ventana.width() < 768) {
+        $('.grilla-module--container').slick({
+		  	autoplay: true,
+		  	arrows: false,
+		  	dots: false,
+		});
+    }
+    if (ventana.width() > 768) {
+        $('.grilla-module--container').slick('unslick');
+    }
+
+}
+
+
+/* Tabs - zonas depilacion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+var tab = $('.zonas-module--tab');
+var tab_img = $('.zonas-module--content-wrap');
+
+$('.zonas-module--tab:first-child').addClass('zonas-module--tab__active');
+$('.zonas-module--content-wrap:first-child').addClass('zonas-module--content-wrap__active');
+
+
+tab.on('click', byadr_tabs);
+
+function byadr_tabs(){
+	var index = $(this).index();
+
+	tab.removeClass('zonas-module--tab__active');
+	$(this).addClass('zonas-module--tab__active');
+
+	tab_img.removeClass('zonas-module--content-wrap__active');
+	tab_img.eq(index).addClass('zonas-module--content-wrap__active');
+	
+
+	//console.log(index);
+
+}
+
+/*
+var tab = $('.zonas-module--tab');
+
+
+
+
+tab.on('click', byadr_tabs);
+
+function byadr_tabs(){
+	var index = $(this).index();
+
+	tab.removeClass('zonas-module--tab__active');
+	$(this).addClass('zonas-module--tab__active');
+
+	tab_img.removeClass('zonas-module--image__active');
+	tab_img.eq(index).addClass('zonas-module--image__active');
+	
+
+	//console.log(index);
+
+}
+*/
+
+
 /* Masonry
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
 

@@ -22,7 +22,7 @@ if( get_row_layout() == 'text_block' ){
 		<section class="text-module <?php if($center) echo 'text-module__center'; ?>" style="<?php if($bg_color){ echo 'background-color:' . $bg_color . ';' ;} if($bg_img){ echo 'background-image: url(' . $bg_img['url'] . ');' ;} if($color){ echo 'color:' . $color . ';' ;} if($custom_css){ echo $custom_css;}?>">
 			<?php // Wrapper ?>
 			<?php if( !$wrapper ): ?>
-				<div class="wrapper">
+				<div class="wrapper wrapper__content">
 			<?php endif; ?>
 
 				<?php // Content ?>

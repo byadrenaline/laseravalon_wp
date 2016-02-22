@@ -1051,7 +1051,7 @@ class WPMDBPro_Multisite_Tools extends WPMDBPro_Addon {
 		}
 
 		foreach ( $blogs as $blog ) {
-			if ( ! empty( $blog['blog_id'] ) && $blog_id === $blog['blog_id'] ) {
+			if ( ! empty( $blog['blog_id'] ) && $blog_id == $blog['blog_id'] ) {
 				return true;
 			}
 		}

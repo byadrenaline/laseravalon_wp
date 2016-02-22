@@ -115,6 +115,12 @@ if( ! function_exists( 'byadr_layout_builder' ) ) {
 				// SLIDER PRECIOS
 				require get_template_directory() . '/inc/acf/lb-slider.php';
 
+				// GRILLA DE IMAGENES
+				require get_template_directory() . '/inc/acf/lb-grilla.php';
+
+				// ZONAS DEPILACION
+				require get_template_directory() . '/inc/acf/lb-zonas.php';
+
 			endwhile;endif; 
 		else:
 

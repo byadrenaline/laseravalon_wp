@@ -7,6 +7,10 @@
 	max-width: $size__content;
 	margin: 0 auto;
 	padding: 0;
+
+	&.wrapper__content{
+		max-width: $size__content * 0.7;
+	}
 }
 .column { 
 	float: left;
@@ -41,7 +45,7 @@
 
 @media only screen and (max-width: 1024px) {
 	.column{
-		float: none;
+		//float: none;
 
 		&.column__half, 
 		&.column__third, 
