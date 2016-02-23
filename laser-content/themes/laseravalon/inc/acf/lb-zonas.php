@@ -4,7 +4,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 if( get_row_layout() == 'zonas' ){ 
 	$sexo = get_sub_field('tab_sexo');
-	
+	$titulo = get_sub_field('tab_titulo');
 	if(have_rows('tab')):
 	
 	?>
@@ -13,12 +13,29 @@ if( get_row_layout() == 'zonas' ){
 	
 	<section class="zonas-module <?php echo $sexo; ?>">
 		<div class="wrapper clearfix">
+			<h2><?php echo $titulo; ?></h2>
 			<div class="zonas-module--tabs column column__half flow-opposite">
 
-				<ul>
+				<ul class="visible-web">
 					<?php while(have_rows('tab')):the_row(); ?>
 						<li class="zonas-module--tab">
 							<p class="zonas-module--icon"><?php the_sub_field('tab_zona'); ?></p>
+							<p class="zonas-module--incluye"><?php the_sub_field('tab_incluye'); ?></p>
+						</li>
+					<?php endwhile; ?>
+				</ul>
+
+				<ul class="hide-web zonas-module--nav">
+					<?php while(have_rows('tab')):the_row(); ?>
+						<li class="zonas-module--tab">
+							<p class="zonas-module--icon"><?php the_sub_field('tab_zona'); ?></p>
+						</li>
+					<?php endwhile; ?>
+				</ul>
+
+				<ul class="hide-web zonas-module--nav-content">
+					<?php while(have_rows('tab')):the_row(); ?>
+						<li>
 							<p class="zonas-module--incluye"><?php the_sub_field('tab_incluye'); ?></p>
 						</li>
 					<?php endwhile; ?>

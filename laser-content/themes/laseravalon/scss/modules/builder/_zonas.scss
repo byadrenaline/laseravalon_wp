@@ -4,10 +4,16 @@
 
 .zonas-module{
 	margin-bottom: 10rem;
+	h2{
+		text-align: center;
+		margin-bottom: 3rem;
+	}
 	ul{
 		margin: 0;
 		padding: 0;
-		list-style: none;		
+		list-style: none;	
+
+		li:focus{outline: 0;}	
 	}
 
 	figure{
@@ -44,8 +50,6 @@
 		font-size: 2.4rem;
 
 		@include transicion;
-
-		
 
 	}
 	.zonas-module--incluye{
@@ -125,91 +129,11 @@
 
 	}
 
-}
 
-/*
-.zonas-module{
-	margin-bottom: 5rem;
-	ul{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		.zonas-module--tab{ //li
-			p{
-				display: inline-block;
-				vertical-align: middle;
-			}
-			.zonas-module--icon{
-				
-				width: 5rem;
-				height: 5rem;
-				margin-right: 1rem;
-
-				border: 2px solid $color__brand;
-				border-radius: 5rem;
-
-				color: $color__brand;
-
-				line-height: 4.6rem;
-				text-align: center;
-				text-transform: uppercase;
-				//font-weight: bold;
-				font-size: 2.4rem;
-
-				@include transicion;
-
-			}
-
-			.zonas-module--include{
-				width: calc(100% - 6.5rem);
-				//background-color: red;
-			}
-
-
-
-			&:hover, 
-			&.zonas-module--tab__active{
-				.zonas-module--icon{
-					background-color: $color__brand;
-					color: #ffffff;
-				}
-					
-			}
-		}
-	}	
-
-	.zonas-module--figure{
-		//background-color: red;
-
-		figure{
-			position: relative;
-			min-height: 40rem;
-			margin: 0;
-
-			img.zonas-module--image{
-				@include centrado;
-
-				max-height: 100%;
-				//display: none;
-				opacity: 0;
-
-
-				
-				&.zonas-module--image__active{
-					//display: block;
-					@include transicion;
-					opacity: 1;
-
-				}
-				
-			}
-		}
-
-
+	.zonas-module--nav,
+	.zonas-module--nav-content {
+		text-align: center;
 	}
 
-	.zonas-module--precio{
-		border: 1px solid $color__gray;
-	}
+
 }
- */

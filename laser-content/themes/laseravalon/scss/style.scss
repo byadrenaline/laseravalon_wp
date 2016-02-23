@@ -77,7 +77,7 @@ INDICE DE CONTENIDOS
 
 //@import "modules/_localizacion.scss";
 
-//@import "modules/_social.scss";
+@import "modules/_social.scss";
 
 //@import "modules/_ancla.scss";
 
@@ -99,6 +99,10 @@ INDICE DE CONTENIDOS
 
 @import "modules/builder/_zonas.scss";
 
+@import "modules/builder/_icon-list.scss";
+
+@import "modules/builder/_price-list.scss";
+
 //@import "modules/builder/_gallery.scss";
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––– 
@@ -115,7 +119,7 @@ INDICE DE CONTENIDOS
 
 @import "layout/_main-content.scss";
 
-//@import "layout/_mobile.scss";
+@import "layout/_mobile.scss";
 
 //@import "layout/_hero.scss";
 
