@@ -1,0 +1,78 @@
+
+/* Iconos Shortcode
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.icon-list{
+	text-align: center;
+
+	.cols{
+		float: left;
+		padding: 0 1rem;
+		margin-bottom: 3rem;
+
+		&.cols__1{ width: 100%; }
+		&.cols__2{ width: 50%; }
+		&.cols__3{ width: 33.33%; }
+		&.cols__4{ width: 25%; }
+	}
+
+}
+.icon--item{
+
+	width: 10rem;
+	height: 10rem;
+
+	margin: 0 auto 5rem;
+
+	border: 4px solid $color__brand;
+	border-radius: 10rem;
+	color: $color__brand;
+	text-align: center;
+
+	&::before{
+		line-height: 9.2rem;
+		font-size: 5rem;
+	}
+
+	&:hover{
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+
+		@include transicion;
+
+	}
+
+	> p{
+		color: $color__gray;
+		font-weight: bold;
+		margin-bottom: 30rem;
+
+	}
+
+}
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.icon-list{
+		.cols{
+			&.cols__3,
+			&.cols__4{ 
+				width: 50%; 
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.icon-list{
+		.cols{
+			&.cols__2,
+			&.cols__3,
+			&.cols__4{ 
+				width: 100%; 
+			}
+		}
+	}
+}

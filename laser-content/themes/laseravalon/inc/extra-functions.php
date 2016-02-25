@@ -9,6 +9,7 @@
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
  * 6.- Infinite Prev/Next post looping
+ * 7.- Quitar Sticky post de main_query
  *
  */
 
@@ -148,3 +149,22 @@ if( ! function_exists( 'byadr_prev_next_links' ) ){
 		endif;
 	}
 }
+
+/* 7.- Quitar Sticky post de main_query
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/** 
+ * Snippet Name: Ignore sticky posts from the main query 
+ * Snippet URL: http://www.wpcustoms.net/snippets/ignore-sticky-posts-main-query/ 
+ */  
+/*
+function byadr_ignore_sticky($query) {
+
+    if (is_home() && $query->is_main_query() && !$blog_slider_query) : 
+        $query->set('ignore_sticky_posts', true);  
+        $query->set('post__not_in', get_option('sticky_posts'));  
+    endif;
+}  
+add_action('pre_get_posts', 'byadr_ignore_sticky'); 
+
+*/

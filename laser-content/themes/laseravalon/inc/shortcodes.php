@@ -4,6 +4,7 @@
  * Shortcodes
  *
  * 1.- Botones
+ * 2.- Iconos
  *
  */
 
@@ -13,49 +14,64 @@
 
 // [boton texto="" url="" tipo="" popup=""]
 
-	add_shortcode( 'boton' , 'byadr_shortcode_boton' );
+add_shortcode( 'boton' , 'byadr_shortcode_boton' );
 
-	function byadr_shortcode_boton($attr){
+function byadr_shortcode_boton($attr){
 
-		// texto del botón
-		if( isset( $attr['texto']) ):
-			$txt_btn = $attr['texto'];
-		else:
-			$txt_btn = __('Pulsa aquí', 'byadr');
-		endif;
+	$attr = shortcode_atts( array(
 
+		'texto'	=>	__('Pulsa aquí', 'byadr'),
+		'url'	=>	'#',
+		'popup'	=>	'',
+		'tipo'	=>	'',
+		), $attr, 'icono'
+	);
 
-		// URL Destino botón
-		if( isset($attr['url']) ):
-			$url_btn = $attr['url'];
-		else:
-			$url_btn = '#';
-		endif;
+	//
+	if( isset($attr['popup']) ):
+		$popup_class = 'btn--popup';
+	endif; 
 
-		// PopUp
-		if( isset($attr['popup']) ):
-			$popup_btn = ' btn--popup';
-		else:
-			$popup_btn = '';
-		endif;
-
-		// Tipo / Diseño botón
-		if( isset( $attr['tipo'] ) ):
-			$tipo_btn = $attr['tipo'];
-
-			if( $tipo_btn == 'primario' ):
-				$tipo_class = 'btn__primary';
-			elseif( $tipo_btn == 'secundario' ):
-				$tipo_class = 'btn__secondary';
-			endif;
-		else:
+	// Tipo / Diseño botón
+	if( isset( $attr['tipo'] ) ):
+		if( $attr['tipo'] == '' ):
 			$tipo_class = '';
+		elseif( $attr['tipo'] == 'primario' ):
+			$tipo_class = 'btn__primary';
+		elseif( $attr['tipo'] == 'secundario' ):
+			$tipo_class = 'btn__secondary';
 		endif;
+	endif;
 
 
-		$boton = '<a class="btn '.$tipo_class.$popup_btn.' " href="'.$url_btn.'">' . $txt_btn . '</a>';
+	$boton = '<a class="btn '.$tipo_class.' '. $popup_class .'" href="'. $attr['url'] .'">' . $attr['texto'] . '</a>';
 
-		return $boton;
+	return $boton;
 
-	}
+}
+
+
+
+/* 2.- Iconos Laser Avalon
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// [icono tipo="" titulo=""]
+
+add_shortcode( 'icono' , 'byadr_shortcode_icono' );
+
+function byadr_shortcode_icono($attr){
+
+	$attr = shortcode_atts( array(
+
+		'tipo'	=> 'la_beauty',
+		'titulo'	=> __('Belleza', 'byadr'),
+		), $attr, 'icono'
+	);
+
+	$icono = '<div class="icon--item ' . $attr['tipo'] . '"><p>'.$attr['titulo'].'</p></div>';
+
+	return $icono;
+
+
+}
 

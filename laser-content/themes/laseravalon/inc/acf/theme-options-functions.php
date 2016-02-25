@@ -5,6 +5,8 @@
  *
  * 1.- Logo
  * 2.- Social Media
+ * 3.- Contacto
+ * 4.- telefono
  * 3.- Dirección ****
  *
  */
@@ -58,11 +60,85 @@ if( ! function_exists( 'byadr_social' ) ){
 }
 
 
+/* 3.- Dirección
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+if( ! function_exists( 'byadr_direccion' ) ){
+
+	function byadr_direccion(){
+		$dir = get_field('direccion', 'option'); 
+		$cp = get_field('codigo_postal', 'option'); 
+		$loc = get_field('localidad', 'option');
+		$prov = get_field('provincia', 'option');
+
+		$maps = get_field('enlace_google_maps', 'option');
+
+		?>
+
+		<div class="direccion">
+			<i class="la_location"></i>
+			<p><?php echo $dir; ?><br><?php echo $cp . ' ' . $loc; ?><br><?php echo $prov; ?></p>
+		</div>
+
+
+		<?php
+	}
+}
+
+
+/* 4.- Contacto
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+if( ! function_exists( 'byadr_contacto' ) ){
+
+	function byadr_contacto(){
+		$tel1 = get_field('telefono_1', 'option'); 
+		$tel2 = get_field('telefono_2', 'option'); 
+
+		$mail = get_field('email', 'option');
+
+		?>
+
+		<div class="telefono">
+			<i class="la_phone"></i>
+			<p><a href="tel:<?php echo $tel1; ?>"><?php echo $tel1; ?></a><br><a href="tel:<?php echo $tel2; ?>"><?php echo $tel2; ?></a></p>
+		</div>
+
+		<div class="email">
+			<i class="la_mail"></i>
+			<p><a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a></p>
+		</div>
+
+
+		<?php
+	}
+}
+
+/* 5.- Telefono
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+if( ! function_exists( 'byadr_phone' ) ){
+
+	function byadr_phone(){
+		$tel1 = get_field('telefono_1', 'option'); 
+		$tel2 = get_field('telefono_2', 'option'); 
+
+
+		?>
+
+		<div class="phone">
+			
+			<p><i class="la_phone"></i><a href="tel:<?php echo $tel1; ?>"><?php echo $tel1; ?></a><span> / </span><a href="tel:<?php echo $tel2; ?>"><?php echo $tel2; ?></a></p>
+		</div>
+
+
+		<?php
+	}
+}
+
+
+
 /* 3.- Dirección ******
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
 
 if( ! function_exists( 'byadr_direccion' ) ){
-
 
 	function byadr_direccion(){
 

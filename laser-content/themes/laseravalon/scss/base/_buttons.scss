@@ -33,57 +33,73 @@ input[type="button"] {
 
 	@include transicion;
 
+	a{
+		text-decoration: none;
+		display: block;
+		color: $color__brand;
+	}
+
 	&:hover{
 		background-color: $color__brand;
 		border-color: $color__brand;
 		color: #ffffff;
+
+		a{
+			color: #ffffff;
+		}
 	}
 
 	&:active,
-	&:focus{
-		color: $color__brand-terciary;
+	&:focus,
+	&:visited{
+		color: $color__brand;
 		outline: none;
+		&:hover{
+			color: #ffffff;
+		}
 	}
 
-	&.btn__primary{
-		border-color: $color__brand;
-		color: $color__brand;
-		a{
-			color: $color__brand;
-		}
 
+	&.btn__primary{
+		border: none;
+		background-color: $color__brand;
+		color: #ffffff;
+
+		a{
+			color: #ffffff;
+		}
+		&:hover{
+			background-color: $color__brand-secondary-dark;
+		}
 	}
 
 	&.btn__secondary{
-		border-color: $color__brand-secondary;
-		color: $color__brand-secondary;
+		border: none;
+		background-color: $color__brand-secondary-dark;
+		color: #ffffff;
+
 		a{
-			color: $color__brand-secondary;
+			color: #ffffff;
 		}
-
-	}
-
-	&.btn__primary:hover,
-	&.btn__secondary:hover{
-		color: $color__brand;
-		border-color: $color__brand;
-		a{
-			color: $color__brand;
+		&:hover{
+			background-color: $color__brand;
 		}
 	}
+
 
 	&.btn__white{
-		color: #ffffff;
 		border-color: #ffffff;
+		//background-color: $color__brand-secondary-dark;
+		color: #ffffff;
 
+		a{
+			color: #ffffff;
+		}
 		&:hover{
-			color: $color__brand;
-			background-color: #ffffff;
-			border-color: #ffffff;
+			background-color: $color__brand-secondary-dark;
+			border-color: $color__brand-secondary-dark;
 		}
 	}
-
-
 
 }
 

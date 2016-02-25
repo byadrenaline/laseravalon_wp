@@ -16,12 +16,14 @@ define( 'BYADR_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 // Custom Post Type
 
 include_once( BYADR_PLUGIN_PATH . 'inc/byadr-cpt-register.php' );
+include_once( BYADR_PLUGIN_PATH . 'inc/byadr-tax-register.php' );
 
 
 register_activation_hook( __FILE__, 'byadr_activacion_inicial' );
 
 function byadr_activacion_inicial() {
 	// CPTs
+	byadr_register_cpt_productos();
 	byadr_register_cpt_faq();
    
 	flush_rewrite_rules();

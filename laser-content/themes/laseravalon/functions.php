@@ -71,7 +71,8 @@ if ( ! function_exists( 'byadr_theme_setup' ) ) :
 		    array(
 		      'main-menu'	=>	__( 'Main Menu', 'byadr' ),
 		      'footer-menu'	=>	__( 'Footer Menu', 'byadr'  ),
-		      'mobile-menu' =>	__( 'Mobile Menu', 'byadr' )
+		      'mobile-menu' =>	__( 'Mobile Menu', 'byadr' ),
+		      'legal-menu' =>	__( 'Legal Menu', 'byadr' ),
 
 		    )
 		);

@@ -71,6 +71,8 @@ INDICE DE CONTENIDOS
 
 @import "modules/_logos.scss";
 
+@import "modules/_phone.scss";
+
 //@import "modules/_prevnext.scss";
 
 //@import "modules/_popup.scss";
@@ -121,11 +123,13 @@ INDICE DE CONTENIDOS
 
 @import "layout/_mobile.scss";
 
-//@import "layout/_hero.scss";
+@import "layout/_faq.scss";
+
+@import "layout/_hero.scss";
 
 //@import "layout/_equipo.scss";
 
-//@import "layout/_blog.scss";
+@import "layout/_blog.scss";
 
 //@import "layout/_contacto.scss";
 

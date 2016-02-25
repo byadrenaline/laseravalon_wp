@@ -1,0 +1,75 @@
+
+/* FAQ - Preguntas frecuentes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.faq{
+
+	dl{
+		&:first-of-type{
+			margin-top: 3rem;
+		}
+		dt{
+			border: 2px solid $color__brand;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+
+			cursor: pointer;
+
+			@include transicion; 
+			&::before{
+				content: $fa-caret-right;
+				font-family: 'FontAwesome';
+				color: $color__brand;
+
+				display: inline-block;
+				width: 2rem;
+				padding-right: 1rem;
+			}
+
+			&:hover{
+				color: $color__brand;
+			}
+
+			&.dt__active{
+				background-color: $color__brand;
+				color: #ffffff;
+				&::before{
+					//content: $fa-caret-down;
+					color: #ffffff;
+					-webkit-transform-origin: left center;
+					-ms-transform-origin: left center;
+					transform-origin: left center;
+
+					-webkit-transform:rotate(90deg);
+					-ms-transform:rotate(90deg);
+					transform:rotate(90deg);
+				}
+			}
+		}
+
+		dd{
+			padding: 1rem 3rem;
+
+			display: none;
+		}
+
+	}
+
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.faq{
+		.main-content{
+			> h1, > h2{
+				text-align: center;
+			}			
+		}
+
+	}
+
+}

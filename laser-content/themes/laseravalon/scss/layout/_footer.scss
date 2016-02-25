@@ -8,6 +8,53 @@ footer{
 	background-color: $color__brand-secondary-dark;
 	color: #ffffff;
 
+	.social-links{
+		@include centrado_h;
+		top: -2.5rem;
+	}
+
+
+	.contact-footer{
+		padding: 5rem 0;
+	}
+
+
+	.direccion, 
+	.telefono,
+	.email{
+		clear: both;
+		margin: 1rem 0;
+
+		i,p{
+			display: inline-block;
+			vertical-align: middle;
+
+			
+		}
+
+		i{
+			font-size: 3rem;
+			float: left;
+		}
+		p{
+			margin: 1rem 0;
+		}
+		a{
+			color: #ffffff;
+			text-decoration: none;
+
+			&:hover{
+				color: $color__brand;
+			}
+		}
+	}
+
+
+
+	.copyright{
+		font-size: 80%;
+		text-align: center;
+	}
 }
 
 
@@ -15,9 +62,5 @@ footer{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 1024px) {
-	footer{
-		padding-top: 7rem;
 
-		text-align: center;
-	}
 }

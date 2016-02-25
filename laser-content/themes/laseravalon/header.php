@@ -17,5 +17,20 @@
 
 	<header>
 		<?php byadr_theme_logo(); ?>
+
+		<nav class="nav-menu nav-menu__main">
+			<?php wp_nav_menu( array(
+				'theme_location' => 'main-menu',
+				'container' => false
+			)); ?>
+		</nav>
+		<?php byadr_phone(); ?>
 	</header>
 	
+
+	<nav class="nav-menu nav-menu__mobile">
+		<?php wp_nav_menu( array(
+				'theme_location' => 'mobile-menu',
+				'container_class'=> 'menu-container',
+			)); ?>
+	</nav>

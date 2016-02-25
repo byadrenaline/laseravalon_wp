@@ -8,12 +8,44 @@ var ventana = $(window);
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 documento.on('ready',function(){
-  $('.slider').slick({
-  	autoplay: true,
-  	arrows: false,
-  	dots: true,
-  });
+	$('.slider').slick({
+		autoplay: true,
+		arrows: false,
+		dots: true,
+	});
+
 });
+
+documento.on('ready', byadr_zonas_responsive);
+ventana.on('resize', byadr_zonas_responsive);
+
+function byadr_zonas_responsive(){
+	if (ventana.width() < 1024) {
+		$('.zonas-module--nav-content').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.zonas-module--nav'
+		});
+
+		$('.zonas-module--nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.zonas-module--nav-content',
+			dots: false,
+			arrows: false,
+			//centerMode: true,
+			focusOnSelect: true
+		});	
+	}
+
+    if (ventana.width() > 1024) {
+        $('.zonas-module--nav').slick('unslick');
+        $('.zonas-module--nav-content').slick('unslick');
+    }
+}
+
 	
 
 
@@ -60,6 +92,41 @@ function byadr_tabs(){
 	
 
 	//console.log(index);
+
+}
+
+/* Menu Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$('.nav-menu__mobile').on('click', byadr_show_menu);
+
+function byadr_show_menu(){
+	$('.nav-menu__mobile .menu-container').slideToggle();
+};
+
+
+
+/* Tabs FAQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+var dt = $('.faq dt');
+var dd = $('.faq dd');
+
+dt.on('click', byadr_faqs);
+
+function byadr_faqs(){
+
+	if( $(this).hasClass('dt__active') ) {
+		$(this).removeClass('dt__active').next('dd').slideUp();
+		
+
+	}else{
+		dd.slideUp();
+		dt.removeClass('dt__active');
+		$(this).addClass('dt__active').next('dd').slideDown();
+
+
+	}
 
 }
 

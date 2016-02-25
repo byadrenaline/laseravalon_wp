@@ -121,6 +121,12 @@ if( ! function_exists( 'byadr_layout_builder' ) ) {
 				// ZONAS DEPILACION
 				require get_template_directory() . '/inc/acf/lb-zonas.php';
 
+				// LISTADO DE ICONOS
+				require get_template_directory() . '/inc/acf/lb-icon-list.php';
+
+				// LISTADO DE PRECIOS
+				require get_template_directory() . '/inc/acf/lb-price-list.php';
+
 			endwhile;endif; 
 		else:
 

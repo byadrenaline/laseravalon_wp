@@ -115,7 +115,14 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "choices": [],
+                                    "choices": {
+                                        "column__full": "1\/1",
+                                        "column__half": "1\/2",
+                                        "column__third": "1\/3",
+                                        "column__fourth": "1\/4",
+                                        "column__two-thirds": "2\/3",
+                                        "column__three-fourth": "3\/4"
+                                    },
                                     "default_value": [],
                                     "allow_null": 0,
                                     "multiple": 0,
@@ -1017,6 +1024,189 @@
                     "max": ""
                 },
                 {
+                    "key": "56cb5378dc820",
+                    "name": "icon-list",
+                    "label": "Listado de iconos",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_56cb5378dc821",
+                            "label": "Ajustes de contenido",
+                            "name": "_copy",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_56cb5378dc822",
+                            "label": "Listado de iconos",
+                            "name": "listado_iconos",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_56cb553adc827",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Agregar Fila",
+                            "sub_fields": [
+                                {
+                                    "key": "field_56cb53c3dc826",
+                                    "label": "Tipo de icono",
+                                    "name": "tipo_icono",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "la_beauty": "Crema",
+                                        "la_clock": "Reloj",
+                                        "la_love": "Coraz\u00f3n",
+                                        "la_mustache": "Bigote",
+                                        "la_power": "Power",
+                                        "la_river": "Onda",
+                                        "la_snow": "Nieve",
+                                        "la_stick": "Tirita",
+                                        "la_sun": "Sol",
+                                        "la_thunder": "Rayo"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "disabled": 0,
+                                    "readonly": 0
+                                },
+                                {
+                                    "key": "field_56cb553adc827",
+                                    "label": "Titulo del icono",
+                                    "name": "titulo_icono",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_56cb554adc828",
+                                    "label": "Descipci\u00f3n del icono",
+                                    "name": "descripcion_icono",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_56cb5378dc823",
+                            "label": "Ajustes avanzados",
+                            "name": "_copy",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_56cb5378dc824",
+                            "label": "Dise\u00f1o de pantalla",
+                            "name": "image_wrapper",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Mostrar contenido a ancho completo de p\u00e1gina",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_56cb5597dc829",
+                            "label": "Columnas",
+                            "name": "columnas_iconos",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "cols__1": "1 columna",
+                                "cols__2": "2 columnas",
+                                "cols__3": "3 columnas",
+                                "cols__4": "4 columnas"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "56bc8f5289555",
                     "name": "slider_precios",
                     "label": "Slider precios",
@@ -1172,12 +1362,33 @@
                             "endpoint": 0
                         },
                         {
+                            "key": "field_56cb5842dc82a",
+                            "label": "Titulo del m\u00f3dulo",
+                            "name": "tab_titulo",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
                             "key": "field_56c731d03e1a5",
                             "label": "Sexo",
                             "name": "tab_sexo",
                             "type": "select",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1336,6 +1547,142 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "56cc48165cb53",
+                    "name": "precios_productos",
+                    "label": "Listado precios",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_56cc48165cb54",
+                            "label": "Ajustes de contenido",
+                            "name": "_copy",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_56cc56bd0a806",
+                            "label": "Titulo del m\u00f3dulo",
+                            "name": "titulo_modulo",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_56cc48585cb5c",
+                            "label": "Producto",
+                            "name": "producto",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "productos"
+                            ],
+                            "taxonomy": [
+                                "tipo_prod:packs",
+                                "tipo_prod:zonas",
+                                "tipo_prod:ofertas"
+                            ],
+                            "filters": [
+                                "taxonomy"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_56cc48165cb59",
+                            "label": "Ajustes avanzados",
+                            "name": "_copy",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_56cc48165cb5a",
+                            "label": "Dise\u00f1o de pantalla",
+                            "name": "precio_wrapper",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Mostrar contenido a ancho completo de p\u00e1gina",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_56cc48165cb5b",
+                            "label": "Columnas",
+                            "name": "columnas_precios",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "column__full": "1 columna",
+                                "column__half": "2 columnas",
+                                "column__third": "3 columnas",
+                                "column__fourth": "4 columnas"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1364,5 +1711,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1455896001
+    "modified": 1456246324
 }

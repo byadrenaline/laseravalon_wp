@@ -1,0 +1,197 @@
+
+
+/* LISTADO DE PRECIOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.price-list{
+	padding: 5rem 0;
+
+	text-align: center;
+	margin-bottom: 5rem;
+
+	h2{
+		margin-bottom: 3rem;
+	}
+
+
+	h3{
+		
+		font-size: 3rem;
+		text-align: center;
+
+		
+	}
+
+	.column{
+		margin-bottom: 3rem;
+	}
+
+
+	.zonas{
+		position: relative;
+		padding: 3rem;
+
+		> div{
+			width: 95%;
+			margin: 0;
+			@include centrado;
+			
+			p{
+				margin: 0;
+			}
+		}
+
+
+	}
+
+	.precio{
+		p{
+			margin: 0;
+		}
+		strong{
+			font-size: 3rem;
+		}
+	}
+
+
+	.price-layout__zonas{
+
+		h3{
+			color: $color__brand;
+			width: 7.4rem;
+			height: 7.4rem;
+			margin: 3rem auto;
+			line-height: 7.1rem;
+			border: 2px solid $color__brand;
+			border-radius: 5rem;	
+
+
+			font-weight: normal;
+			
+		}
+
+		.zonas{
+			min-height: 10rem;
+			background-color: $color__brand;
+			color: #ffffff;
+
+			p{
+				display: inline;
+				&::after{
+					content: ', ';
+				}
+				&:last-child::after{
+					display: none;
+				}
+			}
+
+		}
+
+		.precio{
+			p{
+				line-height: 5rem;
+			}
+			strong{
+				color: $color__brand;
+			}
+		}
+
+
+	}
+
+	.price-layout__packs{
+		padding-top: 3rem;
+		border: 2px solid $color__brand;
+
+		.zonas{
+			height: 20rem;
+			p{
+				margin: 1rem 0;
+			}
+		}
+		.precio{
+			padding: 3rem 0;
+
+			strong{
+				display: block;
+				font-size: 4rem;
+				color: $color__brand;
+			}
+		}
+	}
+
+	.price-layout__ofertas{
+
+		h3{
+			width: 10rem;
+			height: 10rem;
+			border-radius: 5rem;
+			line-height: 9.6rem;
+
+			color: #ffffff;
+			font-weight: normal;
+
+			margin: 3rem auto;
+		}
+
+		.precio{
+			span{
+				display: none;
+			}
+		}
+
+	}
+
+
+	.sex-layout__el { 
+		
+		&.price-layout__packs{ 
+			h3 {color: $color__brand-secondary-dark; }
+
+			border-color: $color__brand-secondary-dark;
+			.precio{
+				background-color: $color__brand-secondary-dark;
+				color: #ffffff;
+				strong{
+					color: #ffffff;
+				}
+			}
+		}
+
+		&.price-layout__ofertas{
+			h3{
+				background-color: $color__brand-secondary-dark;
+			}
+
+			.precio strong{
+				color: $color__brand-secondary-dark;
+			}
+		}
+	}
+
+	.sex-layout__ella { 
+		
+		
+		&.price-layout__packs{ 
+			h3 {color: $color__brand; }
+			border-color: $color__brand;
+			.precio{
+				background-color: $color__brand;
+				color: #ffffff;
+				strong{
+					color: #ffffff;
+				}
+			}
+		}
+
+		&.price-layout__ofertas{
+			h3{
+				background-color: $color__brand;
+			}
+			.precio strong{
+				color: $color__brand;
+			}
+		}
+	}
+
+}

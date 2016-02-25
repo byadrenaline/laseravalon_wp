@@ -11,6 +11,10 @@
 	&.wrapper__content{
 		max-width: $size__content * 0.7;
 	}
+
+	&.wrapper__blog{
+		max-width: $size__content * 1.2;
+	}
 }
 .column { 
 	float: left;

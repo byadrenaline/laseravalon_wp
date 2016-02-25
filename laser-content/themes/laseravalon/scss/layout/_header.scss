@@ -4,19 +4,68 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header{
 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8rem;
+
+	z-index: 10;
+	
+
+	
 	background-color: #ffffff;
+	border: 1px solid $color__gray-lighter;
 	padding: 0rem 5rem;
 
+	.logo{
+		position: absolute;
+		top: 0;
+		left: 5rem;
+
+	}
+
+	nav.nav-menu__main{
+		@include centrado_h;
+
+	}
+
+
+	.phone{
+		position: absolute;
+		top: 0rem;
+		right: 5rem;
+
+	}
 }
 
 
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	header{
+		
+		.logo{
+			left: 2rem;
+		}
+		.phone{
+			
+			right: 2rem;
 
-	
+		}
+		/*
+		.phone{
+			top: 6rem;
+			width: 100%;
+			text-align: center;
+
+
+		}
+		*/
+		nav.nav-menu__main{
+			display: none;
+		}
 
 	}
 

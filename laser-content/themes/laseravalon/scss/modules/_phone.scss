@@ -1,0 +1,62 @@
+
+/* Teléfono contacto
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.phone{
+	color: $color__brand;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 4rem;
+	padding: 2rem 0;
+
+	i{
+		font-size: 2.4rem;
+	}
+	p{
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+		&:hover{
+			color: $color__brand-secondary;
+		}
+
+		&:first-child::after{
+			content: ' / ';
+			display: inline;
+		}
+	}
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+	.phone{
+		line-height: 3rem;
+		width: 13rem;
+		text-align: right;
+		padding: 1rem 0;
+		i{
+			display: block;
+			float: left;
+			margin-top: 2rem;
+		}
+
+		a{
+			display: block;
+		}
+
+
+		span{
+			display: none;
+		}
+
+	}
+}
+
+
