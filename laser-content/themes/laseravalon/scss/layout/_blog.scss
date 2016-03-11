@@ -110,6 +110,29 @@
 	}
 }
 
+.single{
+
+	h1{
+		display: inline-block;
+		padding: 1rem;
+		margin-bottom: 3rem;
+		font-family: $font__font-family-terciary;
+		color: #ffffff;
+		font-size: 2.4rem;
+		font-weight: bold;	
+		font-style: italic;
+
+		background-color: $color__brand;
+
+	}
+
+	aside{
+		margin-top: 8rem;
+	}
+
+}
+
+
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

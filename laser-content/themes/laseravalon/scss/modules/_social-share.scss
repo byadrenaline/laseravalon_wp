@@ -1,0 +1,61 @@
+
+/* Social Share
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.social-share{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	h4{
+		border-bottom: 1px solid $color__gray-light;
+		margin-bottom: 3rem;
+		padding-bottom: 1rem;
+	}
+	
+	li{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+
+		width: 4rem;
+		height: 4rem;
+		border-radius: 4rem;
+		margin-right: 1rem;
+
+		background-color: $color__brand;
+
+		@include transicion;
+
+		&:last-child{
+			margin-right: 0rem;
+		}
+
+		&:hover{
+			background-color: $color__brand-secondary-dark;
+		}
+		a{
+			display: block;
+			width: 5rem;
+			height: 5rem;
+		
+
+			&::before{
+				//content: $fa-facebook-f;
+				font-family: 'FontAwesome';
+				color: #ffffff;
+
+				@include centrado;
+
+
+			
+			}
+		}
+		&.social-share__facebook a::before {content: $fa-facebook-f;}
+		&.social-share__twitter a::before {content: $fa-twitter;}
+		&.social-share__googleplus a::before {content: $fa-google-plus;}
+	}
+
+
+
+}

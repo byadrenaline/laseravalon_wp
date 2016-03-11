@@ -11,7 +11,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-
+/*
 	&::before{
 		content: '';
 		position: absolute;
@@ -35,128 +35,15 @@
 
 
 	}
-
-	&.hero--home{
-		height: 75rem;
-
-
-		text-align: center;
-		text-transform: uppercase;
-
-		.hero-claim{
-			max-width: 96rem;
-		}
-		h1{
-			font-size: 4.2rem;
-			line-height: 100%;
-
-			font-weight: 400;
-			//color: $color__brand;
-			margin: 0 0 3rem;
-
-			&::after{
-				content: '';
-
-				display: block;
-				width: 20rem;
-				height: 1px;
-				margin: 3rem auto;
-
-				background-color: #ffffff;
-
-			}
-
-		}
-		p{
-			max-width: 96rem;
-			margin: 0 auto;
-
-			font-size: 6rem;
-			font-weight: 700;
-			
-			letter-spacing: -2px;
-
-			line-height: 100%;
-
-			color: #ffffff;
-		
-		}		
-	}
-
-	&.hero--cases{
-
-		text-align: left;
-		h1, h2{
-			color: #ffffff;
-			font-size: 5rem;
-			text-transform: uppercase;
-			font-weight: lighter;
-			margin: 0;
-
-		}
-
-		p.descripcion{
-			color: #ffffff;
-			font-size: 1.8rem;
-			text-transform: normal;
-			font-weight: 400;
-			//margin: 0;
-		}
-
-	}
-
-	&.hero--equipo, 
-	&.hero--contacto{
-		
-		h1{
-			font-size: 6rem;
-			line-height: 120%;
-			text-transform: uppercase;
-			font-weight: 400;
-
-			b{
-				font-weight: 400;
-				color: $color__brand-terciary;
-			}
-
-		}
-
-		p{
-			font-size: 2.4rem;
-		}
-
-
-		h1,p{
-			color: #ffffff;
-			text-align: center;
-		}
-
-
-	}
-
-	&.hero--equipo{
-		background-color: $color__brand-dark;
-		.btn{
-			position: relative;
-			left: 50%;
-			-webkit-transform: 	translateX(-50%);
-			-ms-transform: 		translateX(-50%);
-			transform: 			translateX(-50%);			
-
-		}
-	}
-
-
-	&.hero--contacto{
-		background-color: $color__brand;
-		&::before{
-			display: none;
-		}
-	}
-
+*/
 
 	&.hero--blog{
-		height: 30rem;
+		height: 40rem;
+	} 
+
+	&.hero--contacto{
+		height: 50rem;
+
 	}
 
 }

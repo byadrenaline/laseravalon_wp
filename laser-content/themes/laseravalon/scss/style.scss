@@ -81,6 +81,8 @@ INDICE DE CONTENIDOS
 
 @import "modules/_social.scss";
 
+@import "modules/_social-share.scss";
+
 //@import "modules/_ancla.scss";
 
 // Layout Builder
@@ -131,7 +133,7 @@ INDICE DE CONTENIDOS
 
 @import "layout/_blog.scss";
 
-//@import "layout/_contacto.scss";
+@import "layout/_contacto.scss";
 
 //@import "layout/_404.scss";
 
@@ -143,6 +145,8 @@ INDICE DE CONTENIDOS
 @import "plugins/_contact-form7.scss";
 
 @import 'plugins/_slick.scss';
+
+@import 'plugins/_google-maps.scss';
 
 //@import "plugins/_magnific-popup.scss";
 

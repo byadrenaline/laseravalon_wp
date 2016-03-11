@@ -6,8 +6,8 @@
 	$args = array(
 		'post_type'			=> 'post',
 		'posts_per_page'	=> 4,
-		//'ignore_sticky_posts' => true,
-		'post__in'			=> $sticky,
+		'ignore_sticky_posts' => true,
+		//'post__in'			=> $sticky,
 		);
 	$blog_slider_query = new WP_Query( $args );
  

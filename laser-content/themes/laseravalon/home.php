@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
 	<?php if( have_posts() ): ?>
+
 		<div class="main-content blog-content" role="main">
 		<?php get_template_part('template-part/blog', 'slider' ); ?>
+		
 			<div class="wrapper wrapper__blog clearfix">
 			
 				<h1><?php _e('El blog de la depilación laser diodo', 'byadr'); ?></h1>

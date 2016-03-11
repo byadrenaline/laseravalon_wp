@@ -134,6 +134,10 @@ if ( ! function_exists( 'byadr_set_styles_js' ) ) :
 			wp_register_script( 'slick',  get_bloginfo('template_directory') . '/js/min/slick.min.js', false, null, true);
 			wp_enqueue_script('slick');
 
+			// Insertamos Plugin Carousel Slick
+			wp_register_script( 'google_maps',  'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', false, null, true);
+			wp_enqueue_script('google_maps');
+
 			/*
 			// Insertamos script Masonry
 			wp_register_script( 'masonry',  get_bloginfo('template_directory') . '/js/min/masonry.pkgd.min.js', false, null, true);

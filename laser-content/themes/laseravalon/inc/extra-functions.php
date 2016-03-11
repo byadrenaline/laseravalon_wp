@@ -168,3 +168,41 @@ function byadr_ignore_sticky($query) {
 add_action('pre_get_posts', 'byadr_ignore_sticky'); 
 
 */
+
+
+/* 8.- Social Share
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+if( ! function_exists( 'byadr_social_share' ) ){
+
+	function byadr_social_share(){
+		?>
+
+
+		<ul class="social-share">
+			<h4><?php _e('Compartir', 'byadr'); ?></h4>
+			
+			<li class="social-share__facebook">
+				<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook." target="_blank"></a>
+			</li>
+			<li class="social-share__twitter">
+				<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" title="Tweet this!" target="_blank"></a>
+			</li>
+			<li class="social-share__googleplus">
+				<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></a>
+			</li>
+		</ul>
+
+		<?php
+	}
+}
+
+
+
+
+
+
+
+
+
+

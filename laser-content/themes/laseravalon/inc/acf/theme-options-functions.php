@@ -134,6 +134,25 @@ if( ! function_exists( 'byadr_phone' ) ){
 }
 
 
+/* 6.- Google Map
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+if( ! function_exists( 'byadr_google_maps' ) ){
+
+	function byadr_google_maps(){
+		$localtion = get_field('google_maps', 'option'); 
+
+		if( !empty($location) ):
+		?>
+
+		<div class="acf-map">
+			<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+		</div>
+
+
+		<?php
+		endif;
+	}
+}
 
 /* 3.- Dirección ******
 –––––––––––––––––––––––––––––––––––––––––––––––––– 

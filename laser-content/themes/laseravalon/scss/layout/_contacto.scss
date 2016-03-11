@@ -3,32 +3,28 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .page-template-contact{
-
 	article{
-		padding: 5rem 0;
-		text-align: center;
-	}
-
-	.contact-links{
-		div{
+		.direccion,
+		.telefono{
 			text-align: center;
-			padding: 3rem 0;
-			@include transicion;
-			&:first-child{
-				background-color: $color__brand-terciary;
+			i{
+				color: $color__brand;
+				font-size: 4rem;
 			}
-			&:last-child{
-				background-color: $color__brand-secondary;
-			}
-			&:hover{
-				//background-color: $color__brand;
-				.btn{
-					color: #ffffff;
-					border-color: #ffffff;
+
+			a{
+				text-decoration: none;
+				color: $color__gray;
+				&:hover{
+					color: $color__brand;
 				}
 			}
+		}		
+
+		.email{
+			display: none;
 		}
-		
 	}
+
 }
 
